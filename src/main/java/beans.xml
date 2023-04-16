@@ -9,7 +9,8 @@
     <bean id="DieselEngine" class="sdapp.DieselEngine" />
 	<bean id="Car" class="sdapp.Car">
 	<!--  <property name="eng" ref="PetrolEngine"/> -->
-	<property name="eng" ref="DieselEngine"/>
+	<constructor-arg name="eng" ref="DieselEngine" />
+	<!--  <property name="eng" ref="DieselEngine"/>-->
 	</bean>
 	
   
